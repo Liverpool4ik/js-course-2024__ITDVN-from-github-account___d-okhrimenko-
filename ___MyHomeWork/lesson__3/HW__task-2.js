@@ -6,7 +6,7 @@ dayNorm = day.getDate();
 
 console.log(dayNorm);
 
-if (dayNorm === 11) {
+if (dayNorm === 16) {
 	// alert(
 	// 	"sorry, today is not a GOOD Day :)) because today is not the 16.th of September"
 	// );
