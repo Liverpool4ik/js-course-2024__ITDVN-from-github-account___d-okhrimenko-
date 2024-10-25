@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="style.css" />
+		<title>ContactBook</title>
+	</head>
+	<body>
+      <script id="template" type="text/template">
+         <section class="contact">
+            <button onclick="edit({{id}})">Редактировать</button>
+            <button onclick="remove({{id}})">Удалить</button>
+            <h2>{{firstName}} {{lastName}}</h2>
+				<h2>Phone: {{phone}}</h2>
+				<p>Email:{{email}}</p>
+				<p>{{description}}</p>
+			</section>
+		</script>
+
+      <form id="contactForm" action="">
+         <div><label for="">First Name</label><input id="firstNameInput" type="text"></div>
+         <div><label for="">Last Name</label><input id="lastNameInput" type="text"></div>
+         <div><label for="">Phone</label><input id="phoneInput" type="text"></div>
+         <div><label for="">Email</label><input id="emailInput" type="text"></div>
+         <div><label for="">Description</label><input id="descriptionInput" type="text"></div>
+         <button type="submit">Сохранить</button>
+      </form>
+
+
+      <section class="" id="contact-list"></section>
+
+		<script src="../../node_modules/mustache/mustache.min.js"></script>
+		<script src="JS/model.js"></script>
+		<script src="JS/view.js"></script>
+		<script src="JS/controller.js"></script>
+	</body>
+</html>
